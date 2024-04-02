@@ -26,10 +26,6 @@ body {
     gap: 3rem;
 }
 
-.header-container .logo {
-    height: 120px;
-}
-
 .header-container .nav {
     display: flex;
     justify-content: center;
