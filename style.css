@@ -11,10 +11,10 @@
 /* End of CSS Reset */
 
 /* CSS Custom */
-
+/* 
 body {
     height: 10000px;
-}
+} */
 
 .header-container {
     width: 100wh;
@@ -24,6 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    padding: .8rem 2rem;
 }
 
 .header-container .nav {
@@ -34,7 +35,7 @@ body {
 }
 
 .header-container .nav a {
-    padding: .7rem 1.5rem;
+    padding: .5rem 1.5rem;
     border-radius: 100px;
     font-size: 1.2rem;
     text-decoration: none;
@@ -48,39 +49,53 @@ body {
     color: white;        
 }
 
-
-
-/* 
-.header-container .nav-container {
+#jumbotron {
     display: flex;
-    justify-content: center;
+    height: 90vh;
     align-items: center;
-    gap: 5rem;
+    padding: 0 130px;
 }
 
-.header-container .nav-container img {
-    height: 10rem;
+#jumbotron-text,
+#jumbotron-image {
+    flex-grow: 1;
 }
 
-.header-container .nav-container a {
-    padding: 1rem 1.5rem;
-    border-radius: 100px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    font-weight: 400;
+#jumbotron .jumbotron-title {
+    padding: 0 3rem;
+}
+
+#jumbotron .jumbotron-title h1 em {
+    font-size: 4em;
+}
+
+#jumbotron .jumbotron-title > p {
+    margin: .5rem 0 1rem;
+    font-weight: lighter;
+    color: #606060;
+    line-height: 1.9;
+    font-size: 20px;
+}
+
+#jumbotron .jumbotron-image img {
+    border-radius: 50%;
+    height: 20rem;
+}
+
+#jumbotron .jumbotron-title button {
+    padding: .7rem 2rem;
+    margin: .5rem 0;
+    border-radius: .2rem;
     color: black;
+    background-color: rgb(240, 169, 160);
+    border: none;
 }
 
-.header-container .nav-container .logo {
+#jumbotron .jumbotron-title button:hover {
     cursor: pointer;
+    transition: all .1s ease-in-out;
 }
 
-.header-container .nav-container a:hover {
-    border: 2px solid black;
-    background-color: black;
-    color: white;
-}
- */
 
 
 
