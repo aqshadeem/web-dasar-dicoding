@@ -1,106 +1,157 @@
 /* CSS Reset */
 
 * {
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    box-sizing: border-box;
-    font-family: 'Jost', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 /* End of CSS Reset */
 
 /* CSS Custom */
-/* 
-body {
-    height: 10000px;
+
+/* body {
+  height: 10000px;
 } */
 
 .header-container {
-    width: 100wh;
-    background-color: white;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    padding: .8rem 2rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 0.5rem 3rem;
 }
 
-.header-container .nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6rem;
+.header-container .nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.header-container .nav a {
-    padding: .5rem 1.5rem;
-    border-radius: 100px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    font-weight: 400;
-    color: black;
+.header-container .nav-container li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
 }
 
-.header-container .nav a:hover {
-    transition: all .1s ease-in-out;
-    background-color: black;
-    color: white;        
+.header-container .nav-container a {
+  padding: 0.5rem 1.5rem;
+  position: relative;
+  margin: 0 1rem;
+  text-decoration: none;
+  color: black;
+  border-radius: 100px;
+}
+
+.header-container .nav-container a:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
 }
 
 #jumbotron {
-    display: flex;
-    height: 90vh;
-    align-items: center;
-    padding: 0 130px;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding: 0 130px;
 }
 
 #jumbotron-text,
 #jumbotron-image {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 #jumbotron .jumbotron-title {
-    padding: 0 3rem;
+  padding: 0 3rem;
 }
 
 #jumbotron .jumbotron-title h1 em {
-    font-size: 4em;
+  font-size: 4em;
 }
 
 #jumbotron .jumbotron-title > p {
-    margin: .5rem 0 1rem;
-    font-weight: lighter;
-    color: #606060;
-    line-height: 1.9;
-    font-size: 20px;
+  margin: 0.5rem 0 1rem;
+  font-weight: 400;
+  color: #606060;
+  line-height: 1.9;
+  font-size: 20px;
 }
 
 #jumbotron .jumbotron-image img {
-    border-radius: 50%;
-    height: 20rem;
+  border-radius: 50%;
+  height: 20rem;
 }
 
 #jumbotron .jumbotron-title button {
-    padding: .7rem 2rem;
-    margin: .5rem 0;
-    border-radius: .2rem;
-    color: black;
-    background-color: rgb(240, 169, 160);
-    border: none;
+  padding: 0.7rem 2rem;
+  margin: 0.5rem 0;
+  border-radius: 0.2rem;
+  color: white;
+  background-color: rgb(112, 111, 111);
+  border: none;
 }
 
 #jumbotron .jumbotron-title button:hover {
-    cursor: pointer;
-    transition: all .1s ease-in-out;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
 }
 
+#creator {
+  height: 100vh;
+  background-color: rgba(240, 239, 239, 0.856);
+  margin-top: 120px;
+  padding: 100px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5rem;
+}
 
+#creator .creator-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 600px;
+}
 
+/* #creator .creator-content::before {
+    content: "\"";
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 400;
+} */
 
+#creator .creator-content blockquote {
+    font-size: 1.5rem;
+}
 
+#creator .creator-content blockquote span {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
 
+#creator .creator-content blockquote em {
+    font-size: 1.5rem;
+    font-style: oblique;
+}
 
+#creator h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+}
 
+#creator img {
+    width: 20rem;
+    border-radius: 50%;
+}
 /* End of CSS Custom */
