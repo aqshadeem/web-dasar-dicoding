@@ -116,31 +116,24 @@
 }
 
 #creator .creator-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
 }
 
-/* #creator .creator-content::before {
-    content: "\"";
-    font-size: 3rem;
-    font-style: italic;
-    font-weight: 400;
-} */
-
 #creator .creator-content blockquote {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 #creator .creator-content blockquote span {
-    font-size: 2.5rem;
-    font-weight: 500;
+  font-size: 2.5rem;
+  font-weight: 500;
 }
 
 #creator .creator-content blockquote em {
-    font-size: 1.5rem;
-    font-style: oblique;
+  font-size: 1.5rem;
+  font-style: oblique;
 }
 
 #creator h1 {
@@ -150,25 +143,52 @@
 }
 
 #creator img {
-    width: 20rem;
-    border-radius: 50%;
+  width: 20rem;
+  border-radius: 50%;
 }
-
 
 #video {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 50px 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 200px;
 }
 
-#video > span {
-    border: 2px solid black;
+#video > h1 {
+  font-size: 2.5em;
+}
+
+.line {
+  width: 2.5em;
+  border: 2px solid black;
+}
+
+#video .video-container {
+  display: flex;
+  gap: 2rem;
+  padding: 30px;
 }
 
 #video .video-container img {
-    width: 10rem;    
+  width: 20rem;
+}
+
+#video .video-container img:hover {
+  cursor: pointer;
+}
+
+#product {
+  height: 100vh;
+  display: flex;
+  background-color: rgba(240, 239, 239, 0.856);
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 200px;
+}
+
+#product > h1 {
+  font-size: 2.5em;
 }
 /* End of CSS Custom */
