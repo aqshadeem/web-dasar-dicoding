@@ -191,4 +191,15 @@
 #product > h1 {
   font-size: 2.5em;
 }
+
+#product .product-container {
+  background-color: salmon;
+  display: flex;
+  align-items: center;
+}
+
+#product .product-container img {
+  width: 120px;
+}
+
 /* End of CSS Custom */
