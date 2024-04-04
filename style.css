@@ -185,7 +185,7 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  padding: 100px 200px;
+  padding: 100px 0;
 }
 
 #product > h1 {
@@ -193,13 +193,26 @@
 }
 
 #product .product-container {
-  background-color: salmon;
   display: flex;
-  align-items: center;
+  margin-top: 50px;
+  gap: 50px;
+  row-gap: 5px;
+}
+
+#product .product-item {
+  position: relative;
+  text-align: center;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px 30px;
+}
+
+#product .product-item img {
+  margin-bottom: 10px;
 }
 
 #product .product-container img {
-  width: 120px;
+  width: 150px;
 }
 
 /* End of CSS Custom */
