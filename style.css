@@ -219,20 +219,15 @@
   height: 100vh;
   display: flex;
   background-color: white;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  padding: 100px 0;
+  padding: 100px 70px;
 }
 
 #contact > h1 {
   font-size: 2.5em;
 }
 
-#contact .contact-container {
-  display: flex;
+#contact .contact-form {
   background-color: salmon;
-  gap: 50px;
   margin-top: 30px;
 }
 
