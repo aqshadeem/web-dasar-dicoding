@@ -216,8 +216,8 @@
 }
 
 #contact {
-  height: 100vh;
   display: flex;
+  align-items: flex-start;
   background-color: white;
   padding: 100px 70px;
 }
@@ -226,9 +226,108 @@
   font-size: 2.5em;
 }
 
-#contact .contact-form {
-  background-color: salmon;
-  margin-top: 30px;
+#contact .card > h3 {
+  text-align: center;
+  padding-top: 30px;
+  border-radius: 5px 5px 0px 0px;
+  font-size: 35px;
 }
+
+#contact .card > h3::after {
+  content: ' ';
+  display: block;
+  width: 60px;
+  height: 5px;
+  margin: auto;
+  margin-top: 5px;
+  background-color: black;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, .2);
+  padding: 10px;
+}
+
+.contact-form{
+  flex: 2;
+  padding: 10px 20px 0;
+}
+
+.contact-bio {
+  padding: 10px 0 0;
+}
+
+.contact-bio {
+  text-align: center;
+}
+
+.contact-bio img {
+  margin-top: 30px;
+  width: 200px;
+}
+
+.contact-bio > table {
+  border-spacing: 0px;
+  width: auto;
+  border: 2px solid #f7f7f7;
+  margin-bottom: 55px;
+}
+
+.text-muted{
+  color: #8f8f8f;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.table-responsive{
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+tr, th, td{
+  text-align: left;
+  padding: 10px;
+}
+
+
+tr:nth-child(even){
+  background-color: #ffffff;
+}
+
+tr:nth-child(odd){
+  background-color: #f7f7f7;
+} 
+
+.form-group{
+  margin: 30px 40px;
+}
+
+label {
+  display: block;
+  margin-bottom:10px;
+}
+
+input, textarea{
+  width: 100%;
+  padding:10px;
+  border-style: none;
+  border: 1px solid #8f8f8f;
+  border-radius: 5px;
+}
+
+input.send:hover {
+  background-color: rgba(0, 0, 0, .3);
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
 
 /* End of CSS Custom */
