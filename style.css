@@ -27,6 +27,7 @@
   align-items: center;
   transition: 0.6s;
   padding: 0.5rem 3rem;
+  background-color: white;
 }
 
 .header-container .nav-container {
@@ -200,7 +201,6 @@
 }
 
 #product .product-item {
-  position: relative;
   text-align: center;
   border-radius: 5px;
   background-color: white;
@@ -272,6 +272,12 @@
   width: auto;
   border: 2px solid #f7f7f7;
   margin-bottom: 55px;
+}
+
+#footer {
+  padding: 10px 50px;
+  background-color: rgba(240, 239, 239, 0.856);
+  text-align: center;
 }
 
 .text-muted{
